@@ -61,6 +61,7 @@ h3 {
 }
 
 /* Links */
+
 a {
     text-decoration: none;
 }
@@ -120,4 +121,22 @@ a {
     .badge--small {
         font-size: 1.2rem;
     }
+}
+
+/* Lists */
+
+.list {
+    color: var(--color-headings);
+    list-style: none;
+}
+
+.list--inline .list__item {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--tick .list__item::before{
+    content: "\2713";
+    margin-right: 0.75rem;
+    color: var(--color-accent);
 }
