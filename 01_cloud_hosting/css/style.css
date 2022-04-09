@@ -135,8 +135,18 @@ a {
     margin-right: 2rem;
 }
 
-.list--tick .list__item::before{
-    content: "\2713";
-    margin-right: 0.75rem;
-    color: var(--color-accent);
+.list--tick {
+    padding-left: 3rem;
+    list-style-image: url(../images/tick.svg);
+}
+
+.list--tick .list__item {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .list--tick .list__item {
+        padding-left: 0;
+    }
 }
