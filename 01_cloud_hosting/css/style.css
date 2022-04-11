@@ -171,3 +171,68 @@ a {
 .icon--primary {
     fill: var(--color-primary);
 }
+
+/* Buttons */
+
+.btn {
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn--primary {
+    color: #fff;
+    background-color: var(--color-primary);
+}
+
+.btn--primary:hover {
+    background-color: #1b74e8;
+}
+
+.btn--secondary {
+    color: #fff;
+    background-color: var(--color-secondary);
+}
+
+.btn--secondary:hover {
+    background-color: #00c8eb;
+}
+
+.btn--accent {
+    color: #fff;
+    background-color: var(--color-accent);
+}
+
+.btn--accent:hover {
+    background-color: #ec3000;
+}
+
+.btn--block {
+    width: 100%;
+    display: inline-block;
+}
+
+.btn--outline {
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+    background-color: #fff;
+}
+
+.btn--outline:hover {
+    color: #fff;
+    background-color: var(--color-headings);
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.5rem;
+    }
+}
