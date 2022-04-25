@@ -253,6 +253,13 @@ a {
     background-color: var(--color-headings);
 }
 
+.btn .icon {
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+}
+
 @media screen and (min-width: 1024px) {
     .btn {
         font-size: 1.5rem;
@@ -268,7 +275,7 @@ a {
 }
 
 .input-group .input {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
     flex-grow: 1;
     border: 0;
 }
@@ -696,5 +703,31 @@ a {
     .hero__content {
         align-self: center;
         text-align: left;
+    }
+}
+
+/* Domain Block */
+
+.block-domain .input-group {
+    max-width: 675px;
+    margin: 4rem auto;
+    border: 0;
+    box-shadow: 0 0 30px 20px #e6ebee;
+}
+
+.block-domain__prices {
+    max-width: 725px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    justify-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width:768px) {
+    .block-domain__prices {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
 }
