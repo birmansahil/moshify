@@ -200,7 +200,7 @@ a {
 
 .btn {
     margin: 1rem 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     font-size: 1.8rem;
     font-weight: 600;
     text-align: center;
@@ -284,6 +284,7 @@ a {
     padding: 1.5rem 2rem;
     flex-grow: 1;
     border: 0;
+    width: 0;
 }
 
 .input-group .btn {
@@ -345,18 +346,6 @@ a {
     transition: transform 0.2s ease-out;
 }
 
-.plan:hover {
-    transform: scale(1.05);
-}
-
-.plan--popular {
-    transform: scale(1.1);
-}
-
-.plan--popular:hover {
-    transform: scale(1.15);
-}
-
 .plan--popular .card__header {
     position: relative;
 }
@@ -400,6 +389,18 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+    .plan:hover {
+        transform: scale(1.05);
+    }
+    
+    .plan--popular {
+        transform: scale(1.1);
+    }
+    
+    .plan--popular:hover {
+        transform: scale(1.15);
+    }
+
     .plan__name {
         font-size: 1.4rem;
     }
@@ -660,6 +661,10 @@ a {
     background-color: #000;
 }
 
+.nav__brand {
+    transform: translateY(5px);
+}
+
 .nav__toggler {
     opacity: 0.5;
     cursor: pointer;
@@ -745,9 +750,10 @@ a {
     max-width: 725px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     justify-items: center;
+    color: var(--color-headings);
     font-size: 2rem;
     font-weight: 600;
 }
